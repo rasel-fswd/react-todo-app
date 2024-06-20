@@ -29,7 +29,7 @@ export default function Todo() {
     inputRef.current.focus();
   }
 
-  function handleEditTodo(id, e) {
+ 
     function handleEditTodo(id, e) {
       if (!e.target.innerText) return;
       setTodos(items =>
@@ -43,7 +43,7 @@ export default function Todo() {
         )
       );
     }
-  }
+
 
   function handleDelete(id) {
     setTodos(todos.filter(item => item.id !== id));
