@@ -85,7 +85,6 @@ export default function Todo() {
             <TodoITem
               item={item}
               key={item.id}
-              todo={todo}
               onDelete={handleDelete}
               onEdit={handleEditTodo}
             />
