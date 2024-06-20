@@ -30,8 +30,19 @@ export default function Todo() {
   }
 
   function handleEditTodo(id, e) {
-    // setTodo(e.currentTarget.innerHTML);
-    console.log(id, e.currentTarget.innerHTML.replace(/\s+/g, ''));
+    function handleEditTodo(id, e) {
+      if (!e.target.innerText) return;
+      setTodos(items =>
+        items.map(item =>
+          item.id === id
+            ? {
+                ...item,
+                name: e.target.innerText,
+              }
+            : item
+        )
+      );
+    }
   }
 
   function handleDelete(id) {
