@@ -49,7 +49,7 @@ export default function Todo() {
   }
 
   return (
-    <div className=" bg-brand-bg_light min-h-screen w-full mx-auto overflow-hidden px-3 md:px-0">
+    <div className="bg-brand-bg_dark min-h-screen w-full mx-auto overflow-hidden px-3 md:px-0">
       <div className="pt-16 max-w-[600px] mx-auto">
         <h1 className="text-center text-white text-3xl font-bold mb-10">
           🌴Task Tree🌴
@@ -70,15 +70,9 @@ export default function Todo() {
           </button>
         </form>
         <div className=" text-gray-400 mt-12 space-x-4 font-semibold text-sm">
-          <button className=" bg-brand-bg_dark py-1 px-2 rounded-md">
-            Total: {todos.length}
-          </button>
-          <button className=" bg-brand-bg_dark py-1 px-2 rounded-md">
-            Completed: 0
-          </button>
-          <button className=" bg-brand-bg_dark py-1 px-2 rounded-md">
-            Remaining: 0
-          </button>
+          <button className="btn btn-primary">Total: {todos.length}</button>
+          <button className="btn btn-primary">Completed: 0</button>
+          <button className="btn btn-primary">Remaining: 0</button>
         </div>
         <ul className=" text-gray-300 my-6 bg-brand-bg_dark rounded-md">
           {todos.map(item => (
