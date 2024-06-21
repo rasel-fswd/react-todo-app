@@ -6,7 +6,4 @@
   .btn {
     @apply bg-brand-bg_dark py-1 px-2 rounded-md outline-none;
   }
-  .btn-primary {
-    @apply active:bg-brand focus:bg-brand active:text-gray-100 focus:text-gray-100;
-  }
 }
