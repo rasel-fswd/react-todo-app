@@ -1,5 +1,3 @@
-import React from 'react';
-
 export default function TodoITem({ item, onDelete, onEdit }) {
   return (
     <li
